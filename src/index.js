@@ -14,6 +14,10 @@ app.get('/cursos', (req, res) => {
   res.send('ruta de cursos');
 });
 
+app.get('/docentes', (req, res) => {
+  res.send('ruta de docentes');
+});
+
 app.listen(port, ()=> {
     console.log('servidor levantado en el puerto 3000');
 })
