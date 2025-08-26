@@ -2,6 +2,7 @@
   "name": "backendexpress",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "jhovana": "nodemon src/index.js",
     "dev": "nodemon src/index.js",

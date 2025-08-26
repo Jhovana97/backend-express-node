@@ -1,23 +1,7 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+import app from "./app.js";
 
-app.get('/', (req, res) => {
-  res.send('ruta principal');
+const PORT = 3000;
+
+app.listen(PORT, ()=> {
+    console.log(`Servidor lavantado en puerto ${PORT}`);
 });
-
-app.get('/tareas', (req, res) => {
-  res.send('ruta de tareas');
-});
-
-app.get('/cursos', (req, res) => {
-  res.send('ruta de cursos');
-});
-
-app.get('/docentes', (req, res) => {
-  res.send('ruta de docentes');
-});
-
-app.listen(port, ()=> {
-    console.log('servidor levantado en el puerto 3000');
-})
